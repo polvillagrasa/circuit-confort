@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Menjar · Circuit Comfort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="menjar.css">
+</head>
+<body>
+  <div class="phone">
+    <main class="page">
+      <div class="glow-bg"></div>
+      
+<header class="logo-bar">
+  <div class="logo-icon icon-logo"></div>
+  <div class="logo-text">Circuit Comfort</div>
+</header>
+
+      <section class="main-content">
+        <div class="search-row">
+          <input class="search-input" id="foodSearch" type="text" placeholder="Busca menjar sense cues...">
+          <button class="btn-go" id="foodButton">BUSCAR</button>
+        </div>
+
+        <div id="foodMap" class="map-card small"></div>
+        <p class="map-hint">Mapa interactiu amb punts de menjar propers al circuit.</p>
+
+        <div class="filter-row">
+          <button class="filter-chip active">Tot</button>
+          <button class="filter-chip">🍕 Pizza</button>
+          <button class="filter-chip">🥗 Vegetarià</button>
+          <button class="filter-chip">🍦 Gelats</button>
+        </div>
+
+        <article class="best-card">
+          <small>⭐ MILLOR OPCIÓ ARA MATEIX</small>
+          <div><span>🍕</span><section><strong>Food Truck Pizza</strong><p class="green">⏱ Cua baixa: 5 min</p><p>Ruta ombrejada disponible</p></section></div>
+        </article>
+
+        <h2 class="list-title">Opcions properes</h2>
+        <article class="food-card"><span>🍔</span><section><strong>Burger Station</strong><p>Tribuna G · Sense sol directe</p></section><b>8 min</b></article>
+        <article class="food-card"><span>🌭</span><section><strong>Frankfurt Corner</strong><p>Zona Fan Village</p></section><b class="orange">25 min</b></article>
+        <article class="food-card"><span>🍦</span><section><strong>Gelateria Circuit</strong><p>Paddock Area</p></section><b>3 min</b></article>
+      </section>
+    </main>
+    
+<nav class="bottom-nav" aria-label="Navegació principal">
+  <a class="nav-item " href="../circuit/circuit.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+    <span>Circuit</span>
+  </a>
+  <a class="nav-item " href="../transport/transport.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+    <span>Transport</span>
+  </a>
+  <a class="nav-item " href="../alertes/alertes.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+    <span>Alertes</span>
+  </a>
+  <a class="nav-item active" href="../menjar/menjar.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+    <span>Menjar</span>
+  </a>
+  <a class="nav-item " href="../perfil/perfil.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>Perfil</span>
+  </a>
+</nav>
+
+  </div>
+
+  
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="menjar.js"></script>
+</body>
+</html>

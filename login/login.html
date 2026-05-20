@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Inicia sessió · Circuit Comfort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="phone">
+    <main class="page auth-page">
+      <div class="glow-bg"></div>
+      <header class="logo-bar">
+        <div class="logo-icon icon-logo"></div>
+        <div class="logo-text">Circuit Comfort</div>
+      </header>
+
+      <section class="auth-content">
+        <div class="section-label">BENVINGUT DE NOU</div>
+        <h1>INICIA<br>SESSIÓ</h1>
+        <p class="muted-text">Accedeix al teu circuit personalitzat. Primer cal tenir un compte registrat.</p>
+
+        <form id="loginForm" novalidate>
+          <div class="input-group">
+            <label class="input-label" for="email">CORREU ELECTRÒNIC</label>
+            <input class="input-field" id="email" type="email" placeholder="correu@exemple.com" autocomplete="email">
+            <div class="error-message" id="emailError"></div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="password">CONTRASENYA</label>
+            <input class="input-field" id="password" type="password" placeholder="Contrasenya" autocomplete="current-password">
+            <div class="error-message" id="passwordError"></div>
+          </div>
+
+          <div class="error-message form-error" id="formError"></div>
+          <button class="btn-primary mt-24" type="submit">ENTRAR AL CIRCUIT</button>
+        </form>
+
+        <p class="switch-auth">No tens compte? <strong data-page="registre">Registra't gratis</strong></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

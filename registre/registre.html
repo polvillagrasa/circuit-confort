@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Registre · Circuit Comfort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="registre.css">
+</head>
+<body>
+  <div class="phone">
+    <main class="page auth-page">
+      <div class="glow-bg"></div>
+      <header class="logo-bar">
+        <div class="logo-icon icon-logo"></div>
+        <div class="logo-text">Circuit Comfort</div>
+      </header>
+
+      <section class="auth-content">
+        <div class="section-label">COMPTE</div>
+        <h1>CREA EL<br>TEU PERFIL</h1>
+        <p class="muted-text">Registra't abans d'iniciar sessió i personalitza l'experiència al circuit.</p>
+
+        <div class="role-selector" id="roleSelector">
+          <button class="role-chip active" type="button">Pilot</button>
+          <button class="role-chip" type="button">Bandera</button>
+          <button class="role-chip" type="button">Mecànic</button>
+          <button class="role-chip" type="button">Fan</button>
+        </div>
+
+        <form id="registerForm" novalidate>
+          <div class="input-group">
+            <label class="input-label" for="name">NOM I COGNOM</label>
+            <input class="input-field" id="name" type="text" placeholder="Nom complet" autocomplete="name">
+            <div class="error-message" id="nameError"></div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="email">CORREU ELECTRÒNIC</label>
+            <input class="input-field" id="email" type="email" placeholder="correu@exemple.com" autocomplete="email">
+            <div class="error-message" id="emailError"></div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="password">CONTRASENYA</label>
+            <input class="input-field" id="password" type="password" placeholder="Mínim 6 caràcters" autocomplete="new-password">
+            <div class="error-message" id="passwordError"></div>
+          </div>
+
+          <div class="success-message" id="successMessage"></div>
+          <div class="error-message form-error" id="formError"></div>
+          <button class="btn-primary mt-24" type="submit">CREAR COMPTE</button>
+        </form>
+
+        <p class="switch-auth">Ja tens compte? <strong data-page="login">Inicia sessió</strong></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="registre.js"></script>
+</body>
+</html>

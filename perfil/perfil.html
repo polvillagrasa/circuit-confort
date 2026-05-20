@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Perfil · Circuit Comfort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+  <div class="phone">
+    <main class="page">
+      <div class="glow-bg"></div>
+      <section class="profile-header">
+        <div class="profile-avatar">🏎️</div>
+        <h1 id="profileName">Hola!</h1>
+        <p id="profileRole">GP Espanya · Circuit de Barcelona-Catalunya</p>
+      </section>
+
+      <section class="main-content">
+        <div class="checklist-title">
+          <span>Checklist Pre-Esdeveniment</span>
+          <strong id="checkCount">1/5 COMPLETATS</strong>
+        </div>
+        <div class="checklist-progress"><div id="checkFill" style="width:20%;"></div></div>
+
+        <div class="checklist-items">
+          <article class="check-item checked"><div class="checkbox checked">✓</div><span>Entrades</span><em>🎫</em></article>
+          <article class="check-item"><div class="checkbox"></div><span>Aigua</span><em>💧</em></article>
+          <article class="check-item"><div class="checkbox"></div><span>Crema solar +50 SPF</span><em>☀️</em></article>
+          <article class="check-item"><div class="checkbox"></div><span>Sabates còmodes</span><em>👟</em></article>
+          <article class="check-item"><div class="checkbox"></div><span>Gorra</span><em>🧢</em></article>
+        </div>
+
+        <button class="logout-btn" id="logoutBtn">TANCAR SESSIÓ →</button>
+      </section>
+    </main>
+    
+<nav class="bottom-nav" aria-label="Navegació principal">
+  <a class="nav-item " href="../circuit/circuit.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+    <span>Circuit</span>
+  </a>
+  <a class="nav-item " href="../transport/transport.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+    <span>Transport</span>
+  </a>
+  <a class="nav-item " href="../alertes/alertes.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+    <span>Alertes</span>
+  </a>
+  <a class="nav-item " href="../menjar/menjar.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+    <span>Menjar</span>
+  </a>
+  <a class="nav-item active" href="../perfil/perfil.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>Perfil</span>
+  </a>
+</nav>
+
+  </div>
+
+  <script src="perfil.js"></script>
+</body>
+</html>
